@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +12,49 @@
 </head>
 
 <body>
-    <h1>cash register!</h1>    
-    <h4>find out how much remaining cash to be given to customer with minimum number of notes</h4>
+    <section class="body-section">
+    <h1>cash register!</h1>
+    <h4>find out how much remaining cash to be given <br /> to customer with minimum number of notes!!</h4>
 
-    <label class="labels">bill amount</label>
-    <input id="input-bill-amt" class="inputs" required>
-    <label class="labels">cash received</label>
-    <input id="input-cash-rcvd" class="inputs" required>
+    <label class="labels">bill amount   ->  <input id="input-bill-amt" class="input-fields" type="text" required></label>
+    
+    <label class="labels">cash received  ->  <input id="input-cash-rcvd" class="input-fields" type="text" required></label>
+    
 
     <button id="calc-btn" class="calc-btn">calculate</button>
 
-    <div id="output-div" class="outputdiv"></div>
+    
+    <div  class="output-div">
+        <div class="output-text-div"></div>
+        <table class="output-table">
+            <tr>
+                <th>No. of Notes</th>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+                <td class="num-of-notes-to-give"></td>
+            </tr>
+            <tr>
+                <th>Available Notes</th>
+                <td>₹2000</td>
+                <td>₹500</td>
+                <td>₹100</td>
+                <td>₹20</td>
+                <td>₹10</td>
+                <td>₹5</td>
+                <td>₹1</td>
+            </tr>
+
+        </table>
+    </div>
+    <div style="height: 3vh;"></div>
+</section>
+
 
 </body>
 <script src="/app.js" type="text/javascript" language="javascript"></script>
+
 </html>
